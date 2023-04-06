@@ -1,5 +1,5 @@
-// rsc functinal compornents
-//  rcc
+// rsc -> functinal compornents
+// rcc -> class components
 import React from 'react';
 
 const Gif = () => {

@@ -9,6 +9,9 @@ const containerDiv = document.querySelector('#root');
 const root = ReactDOM.createRoot(containerDiv);
 root.render(<App />);
 
+// rsc -> functinal compornents
+// rcc -> class components
+
 // class Hello extends React.Component {
 //   render(){
 //     const {name, age} = this.props;
