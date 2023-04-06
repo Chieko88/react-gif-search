@@ -5,13 +5,23 @@
 // };
 
 import React from 'react';
+import Gif from './Gif';
+import GifList from './GifList';
+import SearchBar from './SearchBar';
+
 
 const App = () => {
   return (
     <div>
-      <h1>Hi</h1>
-      <p>How are you?</p>
+      <div className="left-scene">
+        <SearchBar />
+        <Gif />
+      </div>
+      <div className="right-scene">
+        <GifList />
+      </div>
     </div>
+    // cant have many div as a same level
   );
 };
 
