@@ -1,9 +1,10 @@
 import React from 'react';
+import Gif from './Gif';
 
 const GifList = () => {
   return (
-    <div>
-      Giflist
+    <div className="gif-list">
+      <Gif />
     </div>
   );
 };

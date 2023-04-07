@@ -4,7 +4,6 @@ import React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './components/App';
 
-
 const containerDiv = document.querySelector('#root');
 const root = ReactDOM.createRoot(containerDiv);
 root.render(<App />);

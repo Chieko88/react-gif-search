@@ -4,9 +4,7 @@ import React from 'react';
 
 const Gif = () => {
   return (
-    <div>
-      Gif
-    </div>
+    <img className="gif" src="https://media.giphy.com/media/gG6OcTSRWaSis/giphy.gif" alt="gif" />
   );
 };
 
