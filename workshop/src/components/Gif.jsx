@@ -2,9 +2,11 @@
 // rcc -> class components
 import React from 'react';
 
-const Gif = () => {
+const Gif = (props) => {
+  const { gifId } = props;
+  const url = `https://media.giphy.com/media/${gifId}/giphy.gif`;
   return (
-    <img className="gif" src="https://media.giphy.com/media/gG6OcTSRWaSis/giphy.gif" alt="gif" />
+    <img className="gif" src={url} alt="gif" />
   );
 };
 
