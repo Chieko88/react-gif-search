@@ -20,10 +20,22 @@ const App = () => {
   const [selectedGifId, setSelectedGifId] = useState("gG6OcTSRWaSis");
   // setSelectedGifId("HuVCpmfKheI2Q");
   const [gifIds, setGifIds] = useState(["WuGSL4LFUMQU", "HuVCpmfKheI2Q", "u6uAu3yyDNqRq"]);
+
+  const searchGifs = (keyword) => {
+    giphy.search({
+      q: keyword,
+      rating: 'g',
+      limit: 10
+    }, (err, res) => {
+      const ids = res.data.map((gif) => gif.id);
+      setGifIds(ids);
+    });
+  };
+
   return (
     <div>
       <div className="left-scene">
-        <SearchBar />
+        <SearchBar searchGifs={searchGifs} />
         <div className="selected-gif">
           <Gif gifId={selectedGifId} />
         </div>
